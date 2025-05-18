@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria Role</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+        }
+
+        nav {
+
+            background-color: rgb(121, 108, 108);
+            justify-content: end;
+            padding: 50px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            background-color: rgb(121, 108, 108);
+            justify-content: end;
+            color: black;
+            /* justify-content: space-around; */
+            gap: 5rem;
+            flex-wrap: wrap-reverse;
+
+        }
+
+        div {
+            width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul id="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+    <div id="container">
+        <h1 role="heading" aria-level="1">Welcome to Our Accessible Website</h1>
+        <img src="https://images.pexels.com/photos/1619815/pexels-photo-1619815.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Illustration of accessible web design" role="img">
+    </div>
 
 </body>
 
